@@ -1,8 +1,8 @@
 "use client"
 
 import React from "react"
-import GeneralConstruction from '../../../components/GeneralConstruction'
+import CarriageHouses from '@/components/CarriageHouses'
 
-export default function GeneralConstructionPage() {
+export default function CarriageHousesPage() {
   return <CarriageHouses />
 }

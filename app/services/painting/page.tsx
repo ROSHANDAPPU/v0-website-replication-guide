@@ -1,8 +1,8 @@
 "use client"
 
 import React from "react"
-import InteriorPainting from '../../../components/InteriorPainting'
+import HistoricPainting from '@/components/HistoricPainting'
 
-export default function InteriorPaintingPage() {
+export default function HistoricPaintingPage() {
   return <HistoricPainting />
 }

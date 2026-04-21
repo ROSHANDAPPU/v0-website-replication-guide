@@ -1,8 +1,8 @@
 "use client"
 
 import React from "react"
-import FullHomeRemodels from '../../../components/FullHomeRemodels'
+import HistoricADU from '@/components/HistoricADU'
 
-export default function FullHomeRemodelsPage() {
+export default function HistoricADUPage() {
   return <HistoricADU />
 }
