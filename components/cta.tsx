@@ -14,7 +14,7 @@ export function CTA() {
       ref={sectionRef}
       className="relative py-24 bg-black overflow-hidden"
       style={{
-        backgroundImage: "url('/v0-website-replication-guide/images/placeholders/cta/3ed6b2_slide4.jpg')",
+        backgroundImage: "url('/images/placeholders/cta/3ed6b2_slide4.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',
