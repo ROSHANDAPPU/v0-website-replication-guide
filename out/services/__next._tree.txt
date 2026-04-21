@@ -1,6 +1,6 @@
-:HL["/_next/static/chunks/89c1e732c2047e4a.css","style"]
+:HL["/_next/static/chunks/aa323096b9f33355.css","style"]
 :HL["/_next/static/media/01e4147cff8141ee-s.p.7787e134.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-:HL["/_next/static/chunks/f18bb58a793405df.css","style"]
-:HL["/images/prairie-style-home-restoration-living-room-firepla.jpg","image"]
-0:{"buildId":"Dwp-UGHbVkGKxku6seHe1","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"services","paramType":null,"paramKey":"services","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+:HL["/_next/static/chunks/9cd1b4f498534c31.css","style"]
+:HL["/images/placeholders/services/69fba9_8e9bb1f7a2df92158f8bcfd3bb693d11.jpg","image"]
+0:{"buildId":"NFKVr8XpJom1WtPSDql2A","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"services","paramType":null,"paramKey":"services","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}

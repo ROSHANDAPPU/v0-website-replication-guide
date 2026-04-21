@@ -1,7 +1,7 @@
-:HL["/_next/static/chunks/89c1e732c2047e4a.css","style"]
+:HL["/_next/static/chunks/aa323096b9f33355.css","style"]
 :HL["/_next/static/media/01e4147cff8141ee-s.p.7787e134.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/_next/static/chunks/9c2ef1baef60c912.css","style"]
-:HL["/_next/static/chunks/f18bb58a793405df.css","style"]
-:HL["/craftsman-restoring-vintage-wooden-staircase-1920s.jpg","image"]
-0:{"buildId":"Dwp-UGHbVkGKxku6seHe1","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"about","paramType":null,"paramKey":"about","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+:HL["/_next/static/chunks/9cd1b4f498534c31.css","style"]
+:HL["https://images.adsttc.com/media/images/64d2/53b3/7647/c401/7a95/f8d8/newsletter/casas-de-piedra-en-espana-20-restauraciones-renovaciones-y-transformaciones-desde-su-interior_19.jpg?1691505592","image"]
+0:{"buildId":"NFKVr8XpJom1WtPSDql2A","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"about","paramType":null,"paramKey":"about","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
