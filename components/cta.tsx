@@ -12,9 +12,9 @@ export function CTA() {
     <section
       id="contact"
       ref={sectionRef}
-      className="py-24 md:py-32 text-center overflow-hidden"
+      className="relative py-24 bg-black overflow-hidden"
       style={{
-        backgroundImage: "url('/images/placeholders/cta/3ed6b2_slide4.jpg')",
+        backgroundImage: "url('/v0-website-replication-guide/images/placeholders/cta/3ed6b2_slide4.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',

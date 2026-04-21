@@ -15,7 +15,7 @@ export default function AboutHero() {
       style={{
         marginTop: "80px",
         backgroundImage:
-          "url('/images/placeholders/abouthero/3ed6b2_slide4.jpg')",
+          "url('/v0-website-replication-guide/images/placeholders/abouthero/3ed6b2_slide4.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",
