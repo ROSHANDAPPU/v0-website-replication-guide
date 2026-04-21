@@ -39,9 +39,9 @@ export function BeforeAfterSlider() {
   return (
     <section className="ba-section">
       <div className="ba-slider" ref={sliderRef}>
-        <img src="https://gallery.streamlinevrs.com/units-gallery/00/09/0C/image_164968588.jpeg" alt="After Restoration" className="ba-image-after" />
+        <img src="/images/placeholders/beforeafterslider/db4bb5_image_164968588.jpeg" alt="After Restoration" className="ba-image-after" />
         <div className="ba-before-container">
-          <img src="https://mynorth.com/wp-content/uploads/2021/12/RS74932_newdale40482-scr.jpg" alt="Before Restoration" className="ba-image-before" />
+          <img src="/images/placeholders/beforeafterslider/efa8ac_RS74932_newdale40482-scr.jpg" alt="Before Restoration" className="ba-image-before" />
         </div>
         <div className="ba-handle">
           <div className="handle-line"></div>

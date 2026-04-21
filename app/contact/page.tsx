@@ -2,7 +2,7 @@
 
 import React, { useState } from "react"
 import Image from "next/image"
-import './ContactForm.css';
+import styles from './ContactForm.module.css';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -40,19 +40,30 @@ export default function ContactPage() {
     e.preventDefault()
     setIsSubmitting(true)
     const finalFormData = { ...formData, serviceType: selectedService };
-    console.log('Form submitted:', finalFormData)
+    
+    try {
+      const response = await fetch(process.env.NEXT_PUBLIC_FORMSPREE_URL || 'https://formspree.io/f/your_form_id_here', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(finalFormData)
+      })
 
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 2000))
-
-    setIsSubmitting(false)
-    setIsSubmitted(true)
-    setFormData({ name: '', phone: '', email: '', message: '' })
-    setSelectedService('');
-
-    setTimeout(() => {
-      setIsSubmitted(false)
-    }, 5000);
+      if (response.ok) {
+        setIsSubmitted(true)
+        setFormData({ name: '', phone: '', email: '', message: '' })
+        setSelectedService('');
+        setTimeout(() => setIsSubmitted(false), 5000);
+      } else {
+        console.error('Form submission failed')
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error)
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -61,7 +72,7 @@ export default function ContactPage() {
       <section className="relative h-screen w-full overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.stockcake.com/public/c/5/9/c597e7d5-1732-4176-bd46-4e92445880fa_large/light-beyond-door-stockcake.jpg"
+            src="/images/placeholders/contact/7bfa8e_light-beyond-door-stockcake.jpg"
             alt="Contact background"
             className="w-full h-full object-cover"
           />
@@ -94,6 +105,9 @@ export default function ContactPage() {
             </div>
           ) : (
             <form onSubmit={handleSubmit} id="contact-form" className="space-y-8">
+              {/* Formspree Honeypot (Spam Protection) */}
+              <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" style={{ display: 'none' }} />
+
               <div>
                 <label className="text-[10px] uppercase tracking-[0.2em] text-[#CCCCCC] mb-3 block">
                   NAME
@@ -143,17 +157,17 @@ export default function ContactPage() {
               </div>
 
               {/* --- THE NEW SERVICE GRID --- */}
-              <div className="form-group">
+              <div className={styles["form-group"]}>
                 <label className="text-[10px] uppercase tracking-[0.2em] text-[#CCCCCC] mb-3 block">SERVICE TYPE *</label>
-                <div className="service-grid">
+                <div className={styles["service-grid"]}>
                   {serviceOptions.map((option) => (
                     <div 
                       key={option.id}
-                      className={`service-card ${selectedService === option.id ? 'active' : ''}`}
+                      className={`${styles['service-card']} ${selectedService === option.id ? styles['active'] : ''}`}
                       onClick={() => setSelectedService(option.id)}
                     >
-                      <span className="service-title">{option.title}</span>
-                      <span className="service-subtitle">Starting at {option.price}</span>
+                      <span className={styles["service-title"]}>{option.title}</span>
+                      <span className={styles["service-subtitle"]}>Starting at {option.price}</span>
                     </div>
                   ))}
                 </div>
@@ -162,10 +176,10 @@ export default function ContactPage() {
               {/* --- THE MISSING PRICING BOX --- */}
               {/* Only show this block if a service is selected */}
               {selectedService && (
-                <div className="pricing-summary-box">
-                  <span className="pricing-label">STARTING FROM</span>
-                  <span className="pricing-amount">{getSelectedPrice()}</span>
-                  <span className="pricing-disclaimer">
+                <div className={styles["pricing-summary-box"]}>
+                  <span className={styles["pricing-label"]}>STARTING FROM</span>
+                  <span className={styles["pricing-amount"]}>{getSelectedPrice()}</span>
+                  <span className={styles["pricing-disclaimer"]}>
                     Final pricing depends on project scope and specifications.
                   </span>
                 </div>

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import './Bathrooms.css';
+import styles from './Bathrooms.module.css';
 
 const Bathrooms = () => {
   const revealRefs = useRef<(HTMLDivElement | null)[]>([]);
@@ -8,7 +8,7 @@ const Bathrooms = () => {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
+        if (entry.isIntersecting) entry.target.classList.add(styles.visible);
       });
     }, { threshold: 0.1 });
 
@@ -21,66 +21,66 @@ const Bathrooms = () => {
   };
 
   return (
-    <div className="bath-page-container">
+    <div className={`${styles['bath-page-container']}`}>
 
       {/* =====================================================
           SECTION 1: THE SPLIT SCROLL (Story + Main Images)
          ===================================================== */}
-      <section className="bath-split-section">
+      <section className={`${styles['bath-split-section']}`}>
 
         {/* LEFT: STICKY SIDEBAR (The Story) */}
-        <aside className="bath-sticky-sidebar">
-          <div className="sidebar-content">
-            <div className="sidebar-header">
-              <span className="brand-label">Service 04</span>
-              <h1 className="service-title">Bathrooms</h1>
+        <aside className={`${styles['bath-sticky-sidebar']}`}>
+          <div className={`${styles['sidebar-content']}`}>
+            <div className={`${styles['sidebar-header']}`}>
+              <span className={`${styles['brand-label']}`}>Service 01</span>
+              <h1 className={`${styles['service-title']}`}>Historic Bathroom Remodel</h1>
             </div>
 
-            <div className="metrics-grid">
-              <div className="metric">
-                <span className="label">Est. Price</span>
-                <span className="value">$40k+</span>
+            <div className={`${styles['metrics-grid']}`}>
+              <div className={`${styles['metric']}`}>
+                <span className={`${styles['label']}`}>Est. Price</span>
+                <span className={`${styles['value']}`}>$24k+</span>
               </div>
-              <div className="metric">
-                <span className="label">Lead Time</span>
-                <span className="value">10-16 Weeks</span>
+              <div className={`${styles['metric']}`}>
+                <span className={`${styles['label']}`}>Lead Time</span>
+                <span className={`${styles['value']}`}>~3 Weeks</span>
               </div>
             </div>
 
-            <div className="service-narrative">
+            <div className={`${styles['service-narrative']}`}>
               <p>
-                Upgraded bathrooms with improved comfort, durability, and visual appeal. This includes tile work, fixtures, storage optimization, and design touches suited to your space.
+                Preserving the intimacy of a historic home while upgrading essential functions. Our bathroom remodels respect original tile patterns and fixture placements, integrating modern plumbing and waterproofing systems discreetly behind the walls.
               </p>
               <p>
-                We specialize in creating luxurious, functional bathrooms that blend modern amenities with timeless elegance.
+                We specialize in period-appropriate subway tile, hexagon floor mosaics, and restoring original cast iron tubs — full tile remodels, water damage remediation, code-compliant ventilation, and restoration of original built-in cabinetry.
               </p>
             </div>
 
-            <div className="sidebar-cta">
-              <button className="primary-btn">Request a Quote</button>
+            <div className={`${styles['sidebar-cta']}`}>
+              <button className={`${styles['primary-btn']}`}>Request a Quote</button>
             </div>
           </div>
         </aside>
 
         {/* RIGHT: SCROLLABLE FEED (Main Project Images) */}
-        <main className="bath-feed">
-          <div className="image-block" ref={addToRefs}>
-            <img src="https://kowalske.com/wp-content/uploads/2020/08/wauwatosa-remodel-2-2560x1280.jpg" alt="Luxury Bathroom" />
-            <span className="caption">01 / Spa-Like Retreat</span>
+        <main className={`${styles['bath-feed']}`}>
+          <div className={`${styles['image-block']}`} ref={addToRefs}>
+            <img src="/images/placeholders/bathrooms/28400c_wauwatosa-remodel-2-2560x1280.jpg" alt="Luxury Bathroom" />
+            <span className={`${styles['caption']}`}>01 / Spa-Like Retreat</span>
           </div>
 
-          <div className="text-block" ref={addToRefs}>
-            <h2 className="section-header">Key Features</h2>
-            <div className="features-list">
-              <div className="feature">01. Custom Vanities</div>
-              <div className="feature">02. Premium Fixtures</div>
-              <div className="feature">03. Tile & Stone Work</div>
+          <div className={`${styles['text-block']}`} ref={addToRefs}>
+            <h2 className={`${styles['section-header']}`}>Key Features</h2>
+            <div className={`${styles['features-list']}`}>
+              <div className={`${styles['feature']}`}>01. Custom Vanities</div>
+              <div className={`${styles['feature']}`}>02. Premium Fixtures</div>
+              <div className={`${styles['feature']}`}>03. Tile & Stone Work</div>
             </div>
           </div>
 
-          <div className="image-block" ref={addToRefs}>
-            <img src="https://images.squarespace-cdn.com/content/v1/55f2140de4b08cb02e0a3a5e/3d03d07d-97f3-4d13-abf3-638aa1b3fd1d/IMG_7081.jpg" alt="Vanity Detail" />
-            <span className="caption">02 / Elegant Details</span>
+          <div className={`${styles['image-block']}`} ref={addToRefs}>
+            <img src="/images/placeholders/bathrooms/a37522_IMG_7081.jpg" alt="Vanity Detail" />
+            <span className={`${styles['caption']}`}>02 / Elegant Details</span>
           </div>
         </main>
       </section>
@@ -90,54 +90,54 @@ const Bathrooms = () => {
           SECTION 2: THE "DESIGN DETAILS" GRID (The Bottom Part)
           Matches Screenshot 2 & 3 behavior
          ===================================================== */}
-      <section className="bath-product-grid-section">
+      <section className={`${styles['bath-product-grid-section']}`}>
 
-        <h2 className="grid-section-title">Design Details</h2>
+        <h2 className={`${styles['grid-section-title']}`}>Design Details</h2>
 
-        <div className="product-split-layout">
+        <div className={`${styles['product-split-layout']}`}>
 
           {/* LEFT COLUMN: Featured Item (Sticky or Static) */}
-          <div className="product-col-left">
-            <div className="product-card featured">
-              <div className="prod-img-box">
-                <img src="https://www.atlasceramics.co.uk/wp-content/uploads/2023/08/22280483_1413245302107646_5263375725670432768_n.jpg" alt="Marble Tile" />
+          <div className={`${styles['product-col-left']}`}>
+            <div className={`${styles['product-card']} ${styles['featured']}`}>
+              <div className={`${styles['prod-img-box']}`}>
+                <img src="/images/placeholders/bathrooms/c67822_22280483_1413245302107646_5263375725670432768_n.jpg" alt="Marble Tile" />
               </div>
-              <div className="prod-info">
-                <span className="prod-brand">SURFACES</span>
-                <span className="prod-cat">TILES</span>
-                <h3 className="prod-name">Carrara Marble</h3>
-                <span className="prod-price">$25 / sq ft</span>
-                <a href="#" className="visit-link">VISIT WEBSITE</a>
+              <div className={`${styles['prod-info']}`}>
+                <span className={`${styles['prod-brand']}`}>SURFACES</span>
+                <span className={`${styles['prod-cat']}`}>TILES</span>
+                <h3 className={`${styles['prod-name']}`}>Carrara Marble</h3>
+                <span className={`${styles['prod-price']}`}>$25 / sq ft</span>
+                <a href="#" className={`${styles['visit-link']}`}>VISIT WEBSITE</a>
               </div>
             </div>
           </div>
 
           {/* RIGHT COLUMN: The Feed of Other Items */}
-          <div className="product-col-right">
+          <div className={`${styles['product-col-right']}`}>
 
             {/* Item 1 */}
-            <div className="product-card">
-              <div className="prod-img-box">
-                <img src="https://coloradonest.com/wp-content/uploads/2024/05/close-up-primary-bath.jpg" alt="Shower Fixture" />
+            <div className={`${styles['product-card']}`}>
+              <div className={`${styles['prod-img-box']}`}>
+                <img src="/images/placeholders/bathrooms/ffba44_close-up-primary-bath.jpg" alt="Shower Fixture" />
               </div>
-              <div className="prod-info">
-                <span className="prod-brand">FIXTURES</span>
-                <span className="prod-cat">SHOWER</span>
-                <h3 className="prod-name">Rainfall Showerhead</h3>
-                <span className="prod-price">$500+</span>
+              <div className={`${styles['prod-info']}`}>
+                <span className={`${styles['prod-brand']}`}>FIXTURES</span>
+                <span className={`${styles['prod-cat']}`}>SHOWER</span>
+                <h3 className={`${styles['prod-name']}`}>Rainfall Showerhead</h3>
+                <span className={`${styles['prod-price']}`}>$500+</span>
               </div>
             </div>
 
             {/* Item 2 */}
-            <div className="product-card">
-              <div className="prod-img-box">
-                <img src="https://www.remodelaholic.com/wp-content/uploads/2016/01/1-1920s-cottage-with-added-dormer-for-master-bath-addition-My-Sweet-Cottage-featured-on-@Remodelaholic.jpg" alt="Vanity Cabinet" />
+            <div className={`${styles['product-card']}`}>
+              <div className={`${styles['prod-img-box']}`}>
+                <img src="/images/placeholders/bathrooms/95292f_1-1920s-cottage-with-added-dormer-for-master-bath-addition-My-Sweet-Cottage-featured-on-_Remodelaholic.jpg" alt="Vanity Cabinet" />
               </div>
-              <div className="prod-info">
-                <span className="prod-brand">STORAGE</span>
-                <span className="prod-cat">VANITY</span>
-                <h3 className="prod-name">Custom Oak Vanity</h3>
-                <span className="prod-price">$2,000+</span>
+              <div className={`${styles['prod-info']}`}>
+                <span className={`${styles['prod-brand']}`}>STORAGE</span>
+                <span className={`${styles['prod-cat']}`}>VANITY</span>
+                <h3 className={`${styles['prod-name']}`}>Custom Oak Vanity</h3>
+                <span className={`${styles['prod-price']}`}>$2,000+</span>
               </div>
             </div>
 

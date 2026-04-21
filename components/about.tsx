@@ -21,16 +21,21 @@ const About = () => {
           </h2>
           <div className="story-body">
             <p>
-              Drawing on decades of experience in historic restoration and architectural
-              design, Double R Renovations was founded to bridge the gap between
-              traditional craftsmanship and modern living.
+              Drawing on over a decade of hands-on experience in McKinney's historic districts,
+              Double R Renovations was founded to bridge the gap between traditional craftsmanship
+              and modern living standards.
               <br /><br />
-              We believe that a home is more than just a structure; it is a living
-              narrative. Our work is dedicated to preserving the soul of historic
-              properties while seamlessly integrating the comfort and functionality
-              required by contemporary life. From the intricate molding of a
-              turn-of-the-century estate to the robust framing of a custom build,
-              our approach remains the same: integrity, precision, and a timeless aesthetic.
+              Our founder grew up working alongside his father on some of McKinney's most cherished
+              historic homes, serving a portfolio of over 150 properties. That apprenticeship instilled
+              a deep appreciation for the intricate woodwork, sturdy framing, and detailed aesthetics
+              that define homes built before the modern era. Unlike the streamlined, mass-produced
+              feel of new construction, these homes possess a soul and a story.
+              <br /><br />
+              We believe a home is a living narrative. Our work is dedicated to preserving that
+              narrative — restoring the intricate shingle shake, reviving original floor plans, and
+              ensuring the structural integrity of pier and beam foundations. From restoring a Victorian
+              porch to building a garage that houses a classic car collection, our approach remains
+              the same: integrity, precision, and a timeless aesthetic.
             </p>
           </div>
         </div>
@@ -50,7 +55,7 @@ const About = () => {
               LEGACY
             </p>
             <p className="font-sans text-[14px] md:text-[16px] font-normal text-white/80 tracking-[0.2em]">
-              Bridging historic integrity with modern living.
+              Rooted in McKinney. Built to last a century.
             </p>
           </div>
         </div>
@@ -67,30 +72,36 @@ const About = () => {
           {/* Value 1 */}
           <div className="value-item">
             <span className="value-number">01</span>
-            <h3>Historic Integrity First</h3>
+            <h3>Structural Honesty</h3>
             <p>
-              We restore every home with deep respect for its original architecture,
-              materials, and character. We do not erase history; we revive it.
+              A beautiful historic home is nothing without a solid foundation. With extensive
+              experience in Pier and Beam foundation repair and exterior carpentry, we address
+              the unseen issues first. Our framing and structural work is built to code and
+              built to last, providing a safe and stable canvas for the beautiful details above.
             </p>
           </div>
 
           {/* Value 2 */}
           <div className="value-item">
             <span className="value-number">02</span>
-            <h3>Craftsmanship Without Shortcuts</h3>
+            <h3>In-House Craftsmanship</h3>
             <p>
-              Every detail—from moldings to masonry—is executed by specialized
-              trades who understand historic construction. Quality is our only metric.
+              Working on historic homes requires a specific skillset that general laborers often
+              lack. We maintain a dedicated, experienced team with 11+ years of specialization
+              in this niche. From carpentry to tilework, we handle the work ourselves — ensuring
+              consistent quality control and a deep understanding of each project's unique requirements.
             </p>
           </div>
 
           {/* Value 3 */}
           <div className="value-item">
             <span className="value-number">03</span>
-            <h3>Modern Comfort, Classic Soul</h3>
+            <h3>Client Collaboration</h3>
             <p>
-              We integrate modern systems and layouts while preserving the charm
-              and story that make each home unique. The best of both worlds.
+              Your home, your story. We guide you through the complex world of COAs and historic
+              materials, but we always listen first. Our process is built on clear communication —
+              from the initial scouting visit to the final touchup — ensuring the finished project
+              reflects both our expertise and your personal vision.
             </p>
           </div>
 

@@ -32,27 +32,27 @@ const Kitchens = () => {
         <aside className="kit-sticky-sidebar">
           <div className="sidebar-content">
             <div className="sidebar-header">
-              <span className="brand-label">Service 03</span>
-              <h1 className="service-title">Kitchens</h1>
+              <span className="brand-label">Service 02</span>
+              <h1 className="service-title">Period-Appropriate Kitchens</h1>
             </div>
 
             <div className="metrics-grid">
               <div className="metric">
                 <span className="label">Est. Price</span>
-                <span className="value">$75k+</span>
+                <span className="value">$35k+</span>
               </div>
               <div className="metric">
                 <span className="label">Lead Time</span>
-                <span className="value">8-16 Weeks</span>
+                <span className="value">~4 Weeks</span>
               </div>
             </div>
 
             <div className="service-narrative">
               <p>
-                Custom kitchen upgrades that blend utility and refined style. From layout reconfiguration to cabinetry and lighting, this service enhances the heart of the home.
+                The kitchen is the heart of the home, but in a historic house it shouldn't feel like a time capsule of the wrong decade. We design kitchens that honor the architectural era — whether that's Craftsman shaker cabinets or Victorian beadboard — while concealing modern appliances.
               </p>
               <p>
-                We design kitchens that are both functional and beautiful, using premium materials and expert craftsmanship to create spaces you'll love to cook in.
+                Custom millwork matched to existing trim profiles, installation of Hardie Soffit for exterior kitchen vents, and restoration of original windows and door hardware — all built for ergonomic functionality in today's lifestyle.
               </p>
             </div>
 
@@ -118,7 +118,7 @@ const Kitchens = () => {
             {/* Item 1 */}
             <div className="product-card">
               <div className="prod-img-box">
-                <img src="https://www.homworks.com/wp-content/uploads/2023/05/11_Straight-Kitchen-HD.jpg" alt="Cabinet Hardware" />
+                <img src="/images/placeholders/kitchens/1dbd11_11_Straight-Kitchen-HD.jpg" alt="Cabinet Hardware" />
               </div>
               <div className="prod-info">
                 <span className="prod-brand">HARDWARE</span>

@@ -47,25 +47,25 @@ export function PostProjectCare() {
           <h3 className="text-2xl font-bold text-white mt-4">{postProjectCare.subtitle}</h3>
           <p className="max-w-2xl mx-auto text-white mt-6">{postProjectCare.description}</p>
         </div>
-        <Accordion.Root type="single" collapsible className="space-y-4">
+        <Accordion.Root type="single" collapsible className="space-y-3">
           {postProjectCare.services.map((service, index) => (
-            <Accordion.Item key={index} value={`item-${index}`} className="rounded-lg shadow-sm transition-all duration-300" style={{backgroundColor: '#1B3A34'}}>
+            <Accordion.Item key={index} value={`item-${index}`} className="bg-[#1B3A34] border border-[#2a574e] hover:border-[#4a8a7e] hover:bg-[#1f4a3e] shadow-md hover:shadow-lg hover:shadow-[#1B3A34]/40 transition-all duration-300 rounded-lg">
               <Accordion.Header>
                 <Accordion.Trigger className="group flex items-center justify-between w-full p-6 text-left">
-                  <div className="flex items-center">
+                  <div className="flex items-center border-l-2 border-[#2a574e] group-hover:border-l-[#4a8a7e] pl-4 transition-all duration-300">
                     <div className="text-white">
                       {service.icon}
                     </div>
-                    <p className="text-lg font-semibold ml-6 text-white">
+                    <p className="text-lg font-serif font-semibold ml-6 text-white tracking-wide">
                       {service.text}
                     </p>
                   </div>
-                  <ChevronDown className="w-5 h-5 text-white transform transition-transform duration-300 group-data-[state=open]:rotate-180" />
+                  <ChevronDown className="w-5 h-5 text-[#4a8a7e] transform transition-transform duration-300 group-data-[state=open]:rotate-180" />
                 </Accordion.Trigger>
               </Accordion.Header>
               <Accordion.Content className="overflow-hidden transition-all duration-300 data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp">
-                <div className="px-6 pb-6 pt-0">
-                  <p className="text-white">{service.content}</p>
+                <div className="px-6 pb-5 pt-2 text-white/70 text-sm leading-relaxed border-l-2 border-[#2a574e]">
+                  <p className="font-sans text-white/70">{service.content}</p>
                 </div>
               </Accordion.Content>
             </Accordion.Item>

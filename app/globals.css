@@ -235,3 +235,21 @@ html {
     transform-origin: right;
   }
 }
+
+* {
+  cursor: none !important;
+}
+
+.cursor-dot.cursor-hover {
+  width: 10px !important;
+  height: 10px !important;
+  background-color: #1B4D3E !important;
+}
+
+.cursor-ring.cursor-hover {
+  width: 56px !important;
+  height: 56px !important;
+  border-color: rgba(27, 77, 62, 0.8) !important;
+  margin-left: -28px !important;
+  margin-top: -28px !important;
+}

@@ -8,48 +8,53 @@ import './portfolio.css';
 const projects = [
   {
     id: 1,
-    title: "The Tudor Revival",
-    description: "A classic 1920s brick Tudor home where we restored the exterior masonry but opened up the back with modern steel-framed windows, blending historic charm with contemporary functionality.",
-    categories: ["RESIDENTIAL", "RESTORATION", "1926"],
-    image: "https://www.sunset.com/wp-content/uploads/tudor-exterior-arterberry-cooke-pc-gavin-cater.jpg",
+    title: "The Shaw Carriage House & Outdoor Living",
+    description:
+      "A comprehensive exterior transformation designed for the classic car enthusiast. This project included a new 24'x32' garage and a 20'x24' carport featuring custom Hardie Shingle Shake siding to match the historic texture of the main residence. Completed with full foundation skirting, extensive exterior carpentry replacement, and a 20'x12' Trex deck and stained 20'x20' concrete patio.",
+    categories: ["EXTERIOR", "GARAGE & CARPORT", "McKINNEY"],
+    image: "/images/placeholders/portfolio/1d35e4_tudor-exterior-arterberry-cooke-pc-gavin-cater.jpg",
     layout: "landscape",
   },
   {
     id: 2,
-    title: "The Prohibition Loft",
-    description: "An old industrial building from 1924 converted into a stunning living space. Exposed original brick walls painted white, contrasting with sleek black modern kitchen cabinets in this adaptive reuse masterpiece.",
-    categories: ["HOSPITALITY", "ADAPTIVE REUSE", "1924"],
-    image: "https://media.vrbo.com/lodging/84000000/83450000/83448800/83448744/af8549cc.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill",
+    title: "The Roberts Historic Interior Reconfiguration",
+    description:
+      "An interior gut remodel focused on reclaiming privacy and flow in a historic home while preserving its original charm. Featured a full kitchen renovation, strategic master bedroom reconfiguration relocating a doorway to create a private retreat, full bathroom remodel, fresh front face painting, and a small Trex deck.",
+    categories: ["INTERIOR", "KITCHEN & BATH", "McKINNEY"],
+    image: "/images/placeholders/portfolio/d654fa_af8549cc.jpg",
     layout: "portrait",
   },
   {
     id: 3,
-    title: "The Craftsman Bungalow",
-    description: "A focused restoration of detailed woodwork in a 1922 Craftsman home. The intricate staircase features stained woodwork in a deep, rich color, paired with modern minimalist furniture for timeless elegance.",
-    categories: ["RESIDENTIAL", "RENOVATION", "1922"],
-    image: "https://cdn.vox-cdn.com/thumbor/AfNC-ZaVF2mtc1zsFCH8lffsZ-c=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/19565702/4570_University_Ave____Pierre_Galant_1.jpg",
+    title: "The Dowell Exterior Envelope Restoration",
+    description:
+      "A meticulous exterior preservation effort focusing on the critical details that protect a historic structure. Involved comprehensive carpentry repair, installation of new Hardie Soffit for proper attic ventilation, and a full exterior painting package using period-appropriate color palettes to revitalize the home's weather barrier.",
+    categories: ["EXTERIOR", "RESTORATION", "McKINNEY"],
+    image: "/images/placeholders/portfolio/a0f650_05_Art-Deco-House.jpg",
     layout: "portrait",
   },
   {
     id: 4,
-    title: "The Art Deco Manor",
-    description: "A wide shot of a 1928 living room with geometric molding and arched doorways, featuring contemporary light fixtures and furniture. High contrast styling honors the Art Deco heritage while embracing modern luxury.",
-    categories: ["RESIDENTIAL", "RESTORATION", "1928"],
-    image: "https://swanarchitecture.com/images/projects/art-deco-house/05_Art-Deco-House.jpg",
+    title: "The Neal Master Suite & Foundation Overhaul",
+    description:
+      "A complex restoration addressing both luxury and structural integrity. Full tile remodel of the shower surround, walls, and flooring. Beneath the surface, a critical Pier and Beam foundation repair leveled the home, followed by repair of all cracked sheetrock, fresh paint on all trim, and construction of a new ADU designed to match the main historic house.",
+    categories: ["INTERIOR", "FOUNDATION & ADU", "McKINNEY"],
+    image: "/images/placeholders/portfolio/762d9f_Pulso-Hotel-Praca-Henrique-Monteiro-Arthur-Casas-1.jpg",
     layout: "landscape",
   },
   {
     id: 5,
-    title: "The Georgian Estate",
-    description: "A vertical shot of a grand entryway in this 1921 Georgian home. The historic bones remain intact, but fresh paint and crisp lighting create a space that feels both timeless and contemporary.",
-    categories: ["RESIDENTIAL", "RESTORATION", "1921"],
-    image: "https://design-milk.com/images/2025/07/Pulso-Hotel-Praca-Henrique-Monteiro-Arthur-Casas-1.jpg",
+    title: "The Neal Master Suite & Foundation Overhaul",
+    description:
+      "A complex restoration addressing both luxury and structural integrity. Full tile remodel of the shower surround, walls, and flooring. Beneath the surface, a critical Pier and Beam foundation repair leveled the home, followed by repair of all cracked sheetrock, fresh paint on all trim, and construction of a new ADU designed to match the main historic house.",
+    categories: ["INTERIOR", "FOUNDATION & ADU", "McKINNEY"],
+    image: "/images/placeholders/portfolio/762d9f_Pulso-Hotel-Praca-Henrique-Monteiro-Arthur-Casas-1.jpg",
     layout: "portrait",
   },
-];
+]
 
-interface PortfolioProps {
-  sectionRef?: RefObject<HTMLElement>;
+export interface PortfolioProps {
+  sectionRef?: RefObject<HTMLElement | null>;
   isVisible?: boolean;
   showVerticalText?: boolean;
   backgroundColor?: string;
@@ -75,7 +80,7 @@ export function Portfolio({ sectionRef: externalRef, isVisible: externalIsVisibl
               Latest Work
             </h2>
             <p className="font-serif font-semibold text-[32px] md:text-[48px] leading-[1.2] tracking-[-0.015em] text-white">
-              Showcasing timeless renovations
+              Restoring McKinney's most storied homes
             </p>
           </header>
 

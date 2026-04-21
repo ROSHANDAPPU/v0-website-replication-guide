@@ -15,7 +15,7 @@ export default function AboutHero() {
       style={{
         marginTop: "80px",
         backgroundImage:
-          "url('https://www.londonchimneyservices.com/wp-content/uploads/2016/02/slide4.jpg')",
+          "url('/images/placeholders/abouthero/3ed6b2_slide4.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundAttachment: "fixed",

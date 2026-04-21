@@ -7,36 +7,48 @@ import styles from "./ServicesMenu.module.css";
 
 const services = [
   {
-    slug: "general-construction",
-    name: "General Construction & Framing",
-    description: "Reliable structural work that forms the backbone of any home improvement project. This service covers essential framing, load bearing support, and solid foundational construction designed for long lasting performance.",
-    image: "https://media.aedas.com/styles/mcrop/s3/Pulsa1_Hero.jpg?uUfv_tiM6AqckEmkps4R1NE7LobSI4P1",
-  },
-  {
-    slug: "full-home-remodels",
-    name: "Full-Home Remodels",
-    description: "A complete transformation of interior spaces with thoughtful design choices, functional improvements, and modern aesthetics, tailored to bring a renewed identity to your home.",
-    image: "https://onekindesign.com/wp-content/uploads/2024/01/Tudor-Style-House-Renovation-Pennsylvania-Peter-Zimmerman-Architects-07-1-Kindesign.jpg",
+    slug: "bathrooms",
+    name: "Historic Bathroom Remodel",
+    description:
+      "Preserving the intimacy of a historic home while upgrading essential functions. Period-appropriate subway tile, hexagon floor mosaics, and restored cast iron tubs — master bathrooms starting at $24,000.",
+    image: "/images/placeholders/servicesmenu/1d35e4_tudor-exterior-arterberry-cooke-pc-gavin-cater.jpg",
   },
   {
     slug: "kitchens",
-    name: "Kitchens",
-    description: "Custom kitchen upgrades that blend utility and refined style. From layout reconfiguration to cabinetry and lighting, this service enhances the heart of the home.",
-    image: "https://media.vrbo.com/lodging/84000000/83450000/83448800/83448744/af8549cc.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill",
+    name: "Period-Appropriate Kitchens",
+    description:
+      "Kitchens that honor the architectural era — Craftsman shaker cabinets, Victorian beadboard — while concealing modern appliances and delivering ergonomic functionality for today's lifestyle. Starting at $35,000.",
+    image: "/images/placeholders/servicesmenu/d654fa_af8549cc.jpg",
   },
   {
-    slug: "bathrooms",
-    name: "Bathrooms",
-    description: "Upgraded bathrooms with improved comfort, durability, and visual appeal. This includes tile work, fixtures, storage optimization, and design touches suited to your space.",
-    image: "https://www.sunset.com/wp-content/uploads/tudor-exterior-arterberry-cooke-pc-gavin-cater.jpg",
+    slug: "historic-adu",
+    name: "Historic ADU",
+    description:
+      "Detached ADUs, garage apartments, and studios designed to appear as original outbuildings — matching rooflines, siding profiles, and window muntin patterns. Starting at $200,000.",
+    image: "/images/placeholders/servicesmenu/00cf3e_Tudor-Style-House-Renovation-Pennsylvania-Peter-Zimmerman-Architects-07-1-Kindesign.jpg",
   },
   {
-    slug: "interior-painting",
-    name: "Interior Painting & Finishes",
-    description: "A refined interior update with color choices, finish textures, and detail work. This service highlights the character of each room using cohesive tones and high quality materials.",
+    slug: "carriage-houses",
+    name: "Carriage Houses, Garages & Carports",
+    description:
+      "Detached garages and carports featuring Hardie Shingle Shake, decorative brackets, and custom wood doors — built to house classic and collector vehicles with period-appropriate style. Starting at $37,000.",
+    image: "/images/placeholders/servicesmenu/c5dbf8_Pulsa1_Hero.jpg",
+  },
+  {
+    slug: "historic-preservation",
+    name: "Historic Preservation & Porch Restoration",
+    description:
+      "Salvaging and repairing original materials using traditional joinery techniques. Grand wraparound porches, intricate millwork, and aging architectural details brought back to life without erasing the patina of time.",
+    image: "/images/placeholders/servicesmenu/00cf3e_Tudor-Style-House-Renovation-Pennsylvania-Peter-Zimmerman-Architects-07-1-Kindesign.jpg",
+  },
+  {
+    slug: "painting",
+    name: "Historic Home Painting & Prep",
+    description:
+      "Painting as a preservation treatment — lead-safe surface prep, repair of damaged wood siding, and historically accurate color palettes suited to McKinney Historic District guidelines. Starting at $9/sqft.",
     image: "https://cdn.vox-cdn.com/thumbor/AfNC-ZaVF2mtc1zsFCH8lffsZ-c=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/19565702/4570_University_Ave____Pierre_Galant_1.jpg",
   },
-];
+]
 
 export function ServicesMenu() {
   const [activeService, setActiveService] = useState(0);
@@ -48,7 +60,7 @@ export function ServicesMenu() {
       <div className="container mx-auto px-4 py-16 rounded-lg" style={{backgroundColor: '#1B3A34'}}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div>
-            <h2 className="text-sm font-bold uppercase tracking-widest mb-8 text-white">EXPLORE OUR SERVICES</h2>
+            <h2 className="font-sans text-[13px] font-medium uppercase tracking-[0.15em] mb-8 text-white">EXPLORE OUR SERVICES</h2>
             <ul className="space-y-4">
               {services.map((service, index) => (
                 <li
@@ -57,7 +69,7 @@ export function ServicesMenu() {
                 >
                   <Link href={`/services/${service.slug}`} className="group flex items-center py-4 transition-all duration-300 gap-x-4">
                     <ArrowRight className={`text-white w-8 h-8 transition-all duration-300 ${activeService === index ? 'opacity-100' : 'opacity-50'}`} />
-                    <span className={`text-4xl font-serif transition-all duration-300 group-hover:scale-105 group-hover:text-shadow-glow text-white ${activeService === index ? 'opacity-100' : 'opacity-50'}`}>{service.name}</span>
+                    <span className={`transition-all duration-300 ${activeService === index ? 'text-white font-serif text-2xl tracking-wide border-l-2 border-white pl-4' : 'text-white/30 font-serif text-xl tracking-wide pl-4 group-hover:text-white/60 group-hover:pl-6'}`}>{service.name}</span>
                   </Link>
                 </li>
               ))}
@@ -78,7 +90,8 @@ export function ServicesMenu() {
                   className="object-cover"
                   unoptimized
                 />
-                <div className="absolute bottom-4 left-4 bg-black bg-opacity-50 p-4 rounded">
+                <div className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-[#1B3A34] to-transparent z-10" />
+                <div className="absolute bottom-4 left-4 right-4 backdrop-blur-md bg-white/10 border border-white/20 rounded-xl px-5 py-4 text-white text-sm leading-relaxed shadow-lg">
                     <p>{service.description}</p>
                 </div>
               </div>

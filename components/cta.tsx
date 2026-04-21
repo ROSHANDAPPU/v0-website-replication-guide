@@ -14,7 +14,7 @@ export function CTA() {
       ref={sectionRef}
       className="py-24 md:py-32 text-center overflow-hidden"
       style={{
-        backgroundImage: "url('https://www.londonchimneyservices.com/wp-content/uploads/2016/02/slide4.jpg')",
+        backgroundImage: "url('/images/placeholders/cta/3ed6b2_slide4.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed',

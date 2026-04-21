@@ -8,155 +8,29 @@ import { VerticalText } from "./VerticalText"
 const slides = [
   {
     id: 1,
-    title: "CRAFTSMAN REVIVAL",
+    title: "PRESERVING McKINNEY'S ARCHITECTURAL LEGACY",
     description:
-      "Nestled in the historic heart of Portland, this 1920s Craftsman bungalow has been meticulously restored to honor its original character. Rich woodwork, period-appropriate fixtures, and modern amenities blend seamlessly to create a home that celebrates its heritage while embracing contemporary living.",
-    image: "https://media.houseandgarden.co.uk/photos/62e012c1260f7ae37edaa794/master/w_1600%2Cc_limit/MFOX8726.jpg",
+      "With roots deep in the historic neighborhoods of McKinney, Double R Renovations specializes in breathing new life into century-old homes. We combine time-honored craftsmanship with modern structural integrity to ensure your historic property stands proud for another hundred years.",
+    image: "/images/placeholders/hero/24c12b_MFOX8726.jpg",
   },
   {
     id: 2,
-    title: "VICTORIAN ELEGANCE",
+    title: "THE ART OF THE PERIOD-APPROPRIATE GARAGE",
     description:
-      "A stately Victorian residence transformed with careful attention to architectural detail. Original crown moldings, restored hardwood floors, and custom millwork tell the story of craftsmanship spanning generations, while thoughtful updates ensure comfort for modern families.",
-    image: "https://images.ctfassets.net/3s5io6mnxfqz/5C3t8ALJh4KygvPnwhGTCr/51083d5d3ba71659e7653a5e4384a76a/victorian-interior-design-guide.jpeg?w=1920",
+      "Housing a classic car collection requires more than just a concrete box. We design and build detached garages and carriage houses that complement the original architectural lines of your historic residence, featuring materials like Hardie Shingle Shake and custom millwork that honor the era.",
+    image: "/images/placeholders/hero/17f18b_victorian-interior-design-guide.jpeg",
   },
   {
     id: 3,
-    title: "HERITAGE FARMHOUSE",
+    title: "SENSITIVE ADDITIONS & ADUs",
     description:
-      "This century-old farmhouse has been lovingly renovated to preserve its rustic charm while introducing contemporary functionality. Exposed beams, reclaimed materials, and artisanal finishes create spaces that feel both timeless and fresh.",
-    image: "https://images.ctfassets.net/wlzmdirin2hy/4CdXvxkc2gZbfjO94w2yNJ/adc9b2b18f9ba118adb70ac9b0a09e13/LX_PNW80_HOM_Lawton_GARMAN_KM160-HDR-Edit.jpg?w=3840&q=100",
-  },
-  {
-    id: 4,
-    title: "COLONIAL RESTORATION",
-    description:
-      "A distinguished Colonial home brought back to its former glory through extensive restoration work. Classic proportions, refined details, and a neutral palette create an atmosphere of understated elegance that honors the home's storied past.",
-    image: "https://www.boardandvellum.com/wp-content/uploads/2017/11/3x2-colonial_restoration_on_the_hill-foyer-cut_full.jpg",
-  },
-  {
-    id: 5,
-    title: "ARTS & CRAFTS KITCHEN",
-    description:
-      "A vintage kitchen renovation that combines Arts & Crafts styling with modern functionality. Handcrafted cabinets, period lighting, and contemporary appliances create a space that's both historically accurate and perfectly suited for today's lifestyle.",
-    image: "https://st.hzcdn.com/simgs/pictures/kitchens/saint-paul-craftsman-david-heide-design-studio-img~4741fe870617f87a_14-6780-1-2d8717c.jpg",
-  },
-  {
-    id: 6,
-    title: "TUDOR REVIVAL",
-    description:
-      "An elegant Tudor revival home restored with meticulous attention to architectural authenticity. Intricate woodwork, stained glass, and period-appropriate finishes bring this historic style back to life for modern occupants.",
-    image: "https://www.freep.com/gcdn/presto/2019/07/23/PDTF/af82b312-f155-4c30-b4fe-7c8e04c2fb8a-HouseEnvy_072319_04_MW.jpg",
-  },
-  {
-    id: 7,
-    title: "SPANISH COLONIAL",
-    description:
-      "A beautiful Spanish Colonial courtyard renovation that preserves the architectural heritage of this distinctive style. Arched doorways, tile work, and lush landscaping create an oasis of Mediterranean charm in a modern setting.",
-    image: "https://cdn.vox-cdn.com/thumbor/VfBGkmqnyXW1apnKHoOS4xLx6i8=/0x0:6720x4480/1200x0/filters:focal(0x0:6720x4480):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/19791815/07.jpg",
-  },
-  {
-    id: 8,
-    title: "GEORGIAN STAIRCASE",
-    description:
-      "A grand Georgian staircase restoration that serves as the centerpiece of this historic home. Meticulously carved woodwork and period-appropriate finishes restore the original grandeur while ensuring structural integrity.",
-    image: "https://live.staticflickr.com/8392/8511880589_3b6c20b21d_b.jpg",
-  },
-  {
-    id: 9,
-    title: "PRAIRIE STYLE LIVING",
-    description:
-      "A Prairie Style home renovation that honors Frank Lloyd Wright's architectural principles. Horizontal lines, natural materials, and an organic connection to the landscape create a uniquely American aesthetic.",
-    image: "https://images.squarespace-cdn.com/content/v1/596e6d26d482e936f28ec1c0/1753889385973-9UO4HCVMJO91EQDELI26/16_Schriber_library_00009.jpg",
-  },
-  {
-    id: 10,
-    title: "CRAFTSMAN BUNGALOW",
-    description:
-      "A charming 1920s Craftsman bungalow exterior restoration that maintains the original character while updating systems and finishes. The result is a home that looks as good as the day it was built.",
-    image: "https://media.architecturaldigest.com/photos/668d4a77d9b723d8d6fbb0eb/16:9/w_2560%2Cc_limit/02.TREEHAVEN.jpg",
-  },
-  {
-    id: 11,
-    title: "ELEGANT CRAFTSMAN INTERIOR",
-    description:
-      "An elegant Craftsman interior featuring rich wood details and period-appropriate furnishings. The restoration work preserves the original architectural elements while creating comfortable, modern living spaces.",
-    image: "https://www.remodelista.com/wp-content/uploads/2023/11/anne-mcdonald-072423-1.jpeg",
-  },
-  {
-    id: 12,
-    title: "RICH WOODWORK CRAFTSMAN",
-    description:
-      "A Craftsman home showcasing rich woodwork and intricate detailing. The restoration highlights the craftsmanship of the original builders while providing the durability and comfort required by contemporary homeowners.",
-    image: "https://www.acmdesignarchitects.com/wp-content/uploads/2017/04/craftsman-style-kitchen-wood-cabinets.jpg",
-  },
-  {
-    id: 13,
-    title: "CRAFTSMAN STAIRCASE",
-    description:
-      "A vintage Craftsman staircase restoration that demonstrates the attention to detail required for historic preservation. Handcrafted elements and period-appropriate materials ensure authenticity and longevity.",
-    image: "https://gstatic1.promeai.pro/gallery/publish/2025/01/22/25a100cc4131412aa3eebed741b8363a.jpg",
-  },
-  {
-    id: 14,
-    title: "VICTORIAN FIREPLACE",
-    description:
-      "A Victorian home interior featuring an elegant living room with a restored fireplace. The renovation work preserves the architectural integrity while updating the space for modern comfort and functionality.",
-    image: "https://media.houseandgarden.co.uk/photos/67dc464c0f2847aedf2da20b/master/w_1600%2Cc_limit/Shot05117_RT-production_digital.jpg",
-  },
-  {
-    id: 15,
-    title: "FARMHOUSE BEAMS",
-    description:
-      "A farmhouse interior with rustic beams and modern white walls. The renovation balances historic charm with contemporary design, creating a space that's both comfortable and stylish.",
-    image: "https://vintageharvestlumber.com/cdn/shop/articles/AdobeStock_336803564.jpg?v=1638210327",
-  },
-  {
-    id: 16,
-    title: "COLONIAL ENTRYWAY",
-    description:
-      "A classic Colonial home interior with an elegant entryway. The restoration work maintains the traditional proportions and details while incorporating modern conveniences and updated systems.",
-    image: "https://s.hdnux.com/photos/25/20/76/5574572/4/1920x0.jpg",
-  },
-  {
-    id: 17,
-    title: "ARTS & CRAFTS COTTAGE",
-    description:
-      "An Arts & Crafts cottage kitchen renovation that preserves the movement's emphasis on craftsmanship and natural materials. Handcrafted elements and period-appropriate design create a harmonious space.",
-    image: "https://media.houseandgarden.co.uk/photos/68372a036258cde52f342970/master/w_1600%2Cc_limit/04-25-25-HG-Russell262.jpg",
-  },
-  {
-    id: 18,
-    title: "TUDOR INTERIOR",
-    description:
-      "A Tudor revival home renovation featuring elegant interior details. The restoration work honors the architectural heritage of this distinctive style while providing modern comfort and functionality.",
-    image: "https://media.admiddleeast.com/photos/67e236bc816add2b3749a68b/master/w_1600%2Cc_limit/T_Residence_DJDS_01.jpg",
-  },
-  {
-    id: 19,
-    title: "SPANISH COURTYARD",
-    description:
-      "A Spanish Colonial home courtyard renovation that creates a peaceful outdoor living space. The design incorporates traditional elements with modern landscaping and water features.",
-    image: "https://st.hzcdn.com/simgs/pictures/patios/ams-landscape-design-studios-ams-landscape-design-studios-inc-img~3381aafd0acadef7_14-3778-1-e27dbed.jpg",
-  },
-  {
-    id: 20,
-    title: "GEORGIAN STAIRCASE DETAIL",
-    description:
-      "Detailed restoration of a Georgian staircase showcasing intricate woodwork and architectural craftsmanship. The work ensures that historic elements are preserved for future generations.",
-    image: "https://st.hzcdn.com/simgs/pictures/staircases/st-anne-s-colin-cadle-photography-img~5c5197ca022dcb43_14-8633-1-4f7cb19.jpg",
-  },
-  {
-    id: 21,
-    title: "PRAIRIE FIREPLACE",
-    description:
-      "A Prairie Style home living room with a restored fireplace. The renovation emphasizes horizontal lines and natural materials, creating a warm and inviting space that reflects the movement's principles.",
-    image: "https://images.squarespace-cdn.com/content/v1/63c6c8327819e83c1c16364f/1706565629809-R2BJPJQKW61CMB0289MK/Belgard+fireplace.png",
+      "Expanding a historic home demands a delicate touch. Whether it's a detached Accessory Dwelling Unit (ADU) or a master suite addition, we ensure new construction reads as a respectful continuation of the existing narrative, adhering to strict Historic District guidelines and COA requirements.",
+    image: "/images/placeholders/hero/cfd3c4_LX_PNW80_HOM_Lawton_GARMAN_KM160-HDR-Edit.jpg",
   },
 ]
 
 interface HeroProps {
-  sectionRef: RefObject<HTMLElement>;
+  sectionRef: RefObject<HTMLElement | null>;
   isVisible: boolean;
 }
 
